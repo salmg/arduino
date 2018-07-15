@@ -39,6 +39,8 @@
 
     function connect() {
       t.io.println('Connecting to ' + port.device_.productName + '...');
+      t.io.println('>');
+
       port.connect().then(() => {
         console.log(port);
         t.io.println('Connected.');
