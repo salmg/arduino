@@ -43,7 +43,6 @@
       port.connect().then(() => {
         console.log(port);
         t.io.println('Connected.');
-        t.io.println('>');
         connectButton.textContent = 'Disconnect';
         port.onReceive = data => {
           let textDecoder = new TextDecoder();
