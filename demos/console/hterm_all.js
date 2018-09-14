@@ -5506,12 +5506,12 @@ hterm.Keyboard = function(terminal) {
    * will send the VT keycodes.  If false then home/end sends VT codes and
    * shift home/end scrolls.
    */
-  this.homeKeysScroll = false;
+  this.homeKeysScroll = true;
 
   /**
    * Same as above, except for page up/page down.
    */
-  this.pageKeysScroll = false;
+  this.pageKeysScroll = true;
 
   /**
    * If true, Ctrl-Plus/Minus/Zero controls zoom.
@@ -5524,13 +5524,13 @@ hterm.Keyboard = function(terminal) {
    * Ctrl+C copies if true, sends ^C to host if false.
    * Ctrl+Shift+C sends ^C to host if true, copies if false.
    */
-  this.ctrlCCopy = false;
+  this.ctrlCCopy = true;
 
   /**
    * Ctrl+V pastes if true, sends ^V to host if false.
    * Ctrl+Shift+V sends ^V to host if true, pastes if false.
    */
-  this.ctrlVPaste = false;
+  this.ctrlVPaste = true;
 
   /**
    * Enable/disable application keypad.
@@ -5550,7 +5550,7 @@ hterm.Keyboard = function(terminal) {
    * If true, the backspace should send BS ('\x08', aka ^H).  Otherwise
    * the backspace key should send '\x7f'.
    */
-  this.backspaceSendsBackspace = false;
+  this.backspaceSendsBackspace = true;
 
   /**
    * The encoding method for data sent to the host.
